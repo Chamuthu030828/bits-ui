@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
-    <title>Document</title>
+    <title>taskclaimed</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color:rgb(228, 228, 228);">
+<body style="background-color:rgb(228, 228, 228);" onload="init();">
  <div>
     <div class="header">
         Design a logo for pulz 2020
@@ -77,9 +77,58 @@
 </div>
 
 <div class="boxx">
+    <div class="comment"><textarea name="comment" id="text" cols="63" rows="1" maxlength="250" placeholder=" Feel free to comment anything here... " ></textarea>
+    </div>
+
+    <div class="attach">
+        <button class="attachbutton"><span>Attach files</span></button>
+    </div>
+     
+    <div class="sendwork">
+        <button class="sendbutton"><span>SEND</span></button>
+        
+        
+        
+    </div>
+
+
+
+
 </div>
 
-
+<script type="text/javascript">
+    var observe;
+    if (window.attachEvent) {
+        observe = function (element, event, handler) {
+            element.attachEvent('on'+event, handler);
+        };
+    }
+    else {
+        observe = function (element, event, handler) {
+            element.addEventListener(event, handler, false);
+        };
+    }
+    function init () {
+        var text = document.getElementById('text');
+        function resize () {
+            text.style.height = 'auto';
+            text.style.height = text.scrollHeight+'px';
+        }
+        /* 0-timeout to get the already changed text */
+        function delayedResize () {
+            window.setTimeout(resize, 0);
+        }
+        observe(text, 'change',  resize);
+        observe(text, 'cut',     delayedResize);
+        observe(text, 'paste',   delayedResize);
+        observe(text, 'drop',    delayedResize);
+        observe(text, 'keydown', delayedResize);
+    
+        text.focus();
+        text.select();
+        resize();
+    }
+    </script>
 
 </body>
 </html>

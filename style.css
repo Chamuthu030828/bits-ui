@@ -1,0 +1,222 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+
+body {
+  background: rgb(0, 0, 0);
+  font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+  margin-top: -10px;
+  margin-left: -8px;
+  border-left: 20px;
+  font-size: 40px;
+  padding: 60px;
+  box-sizing: border-box;
+  width: 1900px;
+  height: 180px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: white;
+  background-image: url('./res/header.jpg');
+  
+}
+
+.claimed {
+
+  margin-left: 450px;
+  margin-top: -30px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 1000px;
+  
+  height: 150px;
+  border-color: khaki;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+
+  
+}
+
+.taskclaimed {
+  margin-left: 100px;
+  margin-top: -100px
+}
+
+.img1 {
+  margin: auto;
+  padding: 30px;
+}
+
+.claimed2 {
+
+  margin-left: 30px;
+  color: darkgrey;
+  
+}
+
+.descriptionhead {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-left: 450px;
+  margin-top: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  width: 1000px;
+  height: 50px;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(110, 188, 252);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.description {
+  
+  margin-left: 450px;
+  
+  margin-top: -10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  width: 750px;
+  height: 500px;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(110, 188, 252);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.mentors {
+  
+  margin-left: 1200px;
+  margin-top: -500px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-sizing: border-box;
+  width: 250px;
+  height: 500px;
+  border: 12px solid transparent;
+  border-bottom-color: rgb(110, 188, 252);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+.details {
+  margin-left: 1270px;
+height: 200px;
+margin-top: -330px;
+}
+
+.say {
+  margin-left: 450px; 
+  margin-top: 140px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 280px;
+  height: 600px;
+  border-color: khaki;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.saysomething {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.boxx {
+  margin-left: 750px; 
+  margin-top: -600px;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 700px;
+  height: 600px;
+  border-color: khaki;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.submitbutton {
+  border-radius: 40px;
+  background-color: #36b952;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px;
+  width: 150px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.submitbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.submitbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.submitbutton:hover span {
+  padding-right: 25px;
+}
+
+.submitbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.abondonbutton {
+  border-radius: 40px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 0px;
+  width: 150px;
+  height: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.abondonbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.abondonbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.abondonbutton:hover span {
+  padding-right: 25px;
+}
+
+.abondonbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
